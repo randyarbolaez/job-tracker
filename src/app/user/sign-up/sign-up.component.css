@@ -1,0 +1,199 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    background: #474747;
+    padding: 15vh;
+  }
+
+  .container input {
+    font-family: 'Poiret One', cursive;
+    height: 5vh;
+    width: 15vw;
+    margin: 5%;
+  }
+
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h2 {
+    text-align: center;
+    color: #cc527a;
+  }
+
+  .container input {
+    font-size: 1em;
+  }
+
+  .container label {
+    font-size: 0.3em;
+    color: #cc527a;
+  }
+
+  .auth-btn {
+    color: #cc527a;
+    border-style: none;
+    background: #a8a7a7;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    background: #474747;
+    padding: 15vh;
+  }
+
+  .container input {
+    font-family: 'Poiret One', cursive;
+    height: 5vh;
+    width: 15vw;
+    margin: 5%;
+  }
+
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h2 {
+    text-align: center;
+    color: #cc527a;
+  }
+
+  .container input {
+    font-size: 1em;
+  }
+
+  .container label {
+    font-size: 1.3em;
+    color: #cc527a;
+  }
+
+  .auth-btn {
+    color: #cc527a;
+    border-style: none;
+    background: #a8a7a7;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    background: #474747;
+    padding: 15vh;
+  }
+
+  .container input {
+    font-family: 'Poiret One', cursive;
+    height: 5vh;
+    width: 15vw;
+    margin: 5%;
+  }
+
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h2 {
+    text-align: center;
+    color: #cc527a;
+  }
+
+  .container input {
+    font-size: 1em;
+  }
+
+  .container label {
+    font-size: 1.3em;
+    color: #cc527a;
+  }
+
+  .auth-btn {
+    color: #cc527a;
+    border-style: none;
+    background: #a8a7a7;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    background: #474747;
+    padding: 15vh;
+  }
+
+  .container input {
+    font-family: 'Poiret One', cursive;
+    height: 5vh;
+    width: 15vw;
+    margin: 5%;
+  }
+
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h2 {
+    text-align: center;
+    color: #cc527a;
+  }
+
+  .container input {
+    font-size: 1em;
+  }
+
+  .container label {
+    font-size: 1.3em;
+    color: #cc527a;
+  }
+
+  .auth-btn {
+    color: #cc527a;
+    border-style: none;
+    background: #a8a7a7;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    background: #474747;
+    padding: 15vh;
+  }
+
+  .container input {
+    font-family: 'Poiret One', cursive;
+    height: 5vh;
+    width: 10vw;
+    margin: 5%;
+  }
+
+  .container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container h2 {
+    text-align: center;
+    color: #cc527a;
+  }
+
+  .container input {
+    font-size: 1.3em;
+  }
+
+  .container label {
+    font-size: 1.3em;
+    color: #cc527a;
+  }
+
+  .auth-btn {
+    color: #cc527a;
+    border-style: none;
+    background: #a8a7a7;
+  }
+}

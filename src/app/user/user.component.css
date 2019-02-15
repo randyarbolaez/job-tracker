@@ -1,0 +1,15 @@
+.main-container {
+  display: flex;
+  width: 95vw;
+  background: #a8a7a7;
+  height: 85vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #363636;
+  height: 85vh;
+  width: 85vw;
+}

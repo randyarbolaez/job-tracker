@@ -1,0 +1,38 @@
+<div class="container">
+  <form
+    #signInForm="ngForm"
+    (ngSubmit)="signInForm.valid && onSubmit(signInForm)"
+  >
+    <h2>Log In</h2>
+    <input
+      type="text"
+      name="username"
+      #username="ngModel"
+      [(ngModel)]="model.username"
+      placeholder="username"
+      required
+    />
+    <div *ngIf="signInForm.submitted && !username.valid">
+      <label>This field is required</label>
+    </div>
+
+    <input
+      type="password"
+      name="password"
+      #password="ngModel"
+      [(ngModel)]="model.password"
+      placeholder="password"
+      required
+      minlength="5"
+    />
+    <div *ngIf="signInForm.submitted && password.errors">
+      <label *ngIf="password.errors.required">This field is required</label>
+      <label *ngIf="password.errors.minlength">At least 5 characters</label>
+    </div>
+    <input type="submit" value="Log In" class="auth-btn" />
+  </form>
+</div>
+
+<div class="error-message" *ngIf="serverErrorMessages">
+  <h1>{{ serverErrorMessages }}</h1>
+</div>

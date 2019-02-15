@@ -1,0 +1,90 @@
+<div class="container">
+  <h1>Create</h1>
+  <form #jobForm="ngForm" (ngSubmit)="jobForm.valid && onSubmit(jobForm)">
+    <table>
+      <tr>
+        <th>Company Name</th>
+        <th>Company Website</th>
+        <th>Job Posting</th>
+        <th>Location</th>
+        <th>Name of Person In Company</th>
+        <th>LinkedIn of Person</th>
+        <th>Email of Person</th>
+        <th>Submit</th>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            #companyName="ngModel"
+            [(ngModel)]="jobService.listedJob.companyName"
+            name="companyName"
+            placeholder="company name"
+            required
+          />
+        </td>
+        <td>
+          <input
+            type="url"
+            #companyNameUrl="ngModel"
+            [(ngModel)]="jobService.listedJob.companyNameUrl"
+            name="companyNameUrl"
+            placeholder="company website"
+            required
+          />
+        </td>
+        <td>
+          <input
+            type="url"
+            #jobPosting="ngModel"
+            [(ngModel)]="jobService.listedJob.jobPosting"
+            name="jobPosting"
+            placeholder="job posting"
+            required
+          />
+        </td>
+        <td>
+          <input
+            type="text"
+            #location="ngModel"
+            [(ngModel)]="jobService.listedJob.location"
+            name="location"
+            placeholder="company location"
+            required
+          />
+        </td>
+        <td>
+          <input
+            type="text"
+            #personOfContact="ngModel"
+            [(ngModel)]="jobService.listedJob.personOfContact"
+            name="personOfContact"
+            placeholder="person in company"
+            required
+          />
+        </td>
+        <td>
+          <input
+            type="url"
+            #personOfContactUrl="ngModel"
+            [(ngModel)]="jobService.listedJob.personOfContactUrl"
+            name="personOfContactUrl"
+            placeholder="person's linkedin"
+            required
+          />
+        </td>
+        <td>
+          <input
+            type="email"
+            #mailToLink="ngModel"
+            [(ngModel)]="jobService.listedJob.mailToLink"
+            name="mailToLink"
+            placeholder="email of person"
+            required
+          />
+        </td>
+        <td><input type="submit" value="Create" /></td>
+      </tr>
+    </table>
+  </form>
+</div>

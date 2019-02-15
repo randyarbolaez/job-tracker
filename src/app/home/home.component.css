@@ -1,0 +1,128 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+  }
+
+  .blah {
+    font-size: 1.5em;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background: #e8175d;
+    width: 50vw;
+    height: 85vh;
+  }
+
+  .foo {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    background: #cc527a;
+    width: 50vw;
+    height: 85vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+  }
+
+  .blah {
+    font-size: 2.9em;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background: #e8175d;
+    width: 50vw;
+    height: 85vh;
+  }
+
+  .foo {
+    font-size: 2.9em;
+    display: flex;
+    align-items: center;
+    background: #cc527a;
+    width: 50vw;
+    height: 85vh;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .blah {
+    font-size: 3.7em;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background: #e8175d;
+    width: 50vw;
+    height: 85vh;
+  }
+
+  .foo {
+    font-size: 3.7em;
+    display: flex;
+    align-items: center;
+    background: #cc527a;
+    width: 50vw;
+    height: 85vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    display: flex;
+  }
+
+  .blah {
+    font-size: 5em;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background: #e8175d;
+    width: 50vw;
+    height: 85vh;
+  }
+
+  .foo {
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    background: #cc527a;
+    width: 50vw;
+    height: 85vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    display: flex;
+  }
+
+  .blah {
+    font-size: 6em;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background: #e8175d;
+    width: 50vw;
+    height: 85vh;
+  }
+
+  .foo {
+    font-size: 6em;
+    display: flex;
+    align-items: center;
+    background: #cc527a;
+    width: 50vw;
+    height: 85vh;
+  }
+}

@@ -1,0 +1,38 @@
+<table>
+  <tr>
+    <th>Company Name</th>
+    <th>Job Posting</th>
+    <th>Location</th>
+    <th>Person In Company</th>
+    <th>Email</th>
+    <th>Delete Job</th>
+  </tr>
+  <tr
+    *ngFor="
+      let job of (jobService.jobs
+        | paginate: { itemsPerPage: 10, currentPage: p })
+    "
+  >
+    <td>
+      <a href="{{ job.companyNameUrl }}" target="_blank"
+        ><h3>
+          {{ job.companyName }}
+        </h3></a
+      >
+    </td>
+    <td><a href="{{ job.jobPosting }}" target="_blank">Job Posting</a></td>
+    <td>{{ job.location }}</td>
+    <td>
+      <a href="{{ job.personOfContactUrl }}" target="_blank"
+        ><h3>{{ job.personOfContact }}</h3></a
+      >
+    </td>
+    <td>
+      <a href="mailto:{{ job.mailToLink }}">{{ job.mailToLink }}</a>
+    </td>
+    <td>
+      <button (click)="deleteJob(job._id)" class="delete-btn">Delete</button>
+    </td>
+  </tr>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</table>

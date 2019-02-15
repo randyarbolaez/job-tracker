@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Faster+One|Megrim|Poiret+One|Ubuntu');
+
+body {
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Poiret One', cursive;
+  /* font-family: 'Faster One', cursive; */
+  /* font-family: 'Megrim', cursive; */
+}
+
+body a {
+  color: #a8a7a7;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+body a:hover {
+  color: #fe4365;
+  font-size: 1.2em;
+}
