@@ -24,14 +24,21 @@ export class JobService {
   constructor(private http: HttpClient) {}
 
   getJobList() {
-    return this.http.get(`${environment.apiBaseUrl}/job/joblist`);
+    return this.http.get(
+      `https://job-tracker-api-0.herokuapp.com/api/job/joblist`
+    );
   }
 
   remove(id: string) {
-    return this.http.delete(`${environment.apiBaseUrl}/job/delete/${id}`);
+    return this.http.delete(
+      `https://job-tracker-api-0.herokuapp.com/api/job/delete/${id}`
+    );
   }
 
   create(job: Job) {
-    return this.http.post(`${environment.apiBaseUrl}/job/create`, job);
+    return this.http.post(
+      `https://job-tracker-api-0.herokuapp.com/api/job/create`,
+      job
+    );
   }
 }
