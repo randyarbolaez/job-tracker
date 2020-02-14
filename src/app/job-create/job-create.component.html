@@ -15,16 +15,6 @@
       <tr>
         <td>
           <input
-            type="text"
-            #companyName="ngModel"
-            [(ngModel)]="jobService.listedJob.companyName"
-            name="companyName"
-            placeholder="company name"
-            required
-          />
-        </td>
-        <td>
-          <input
             type="url"
             #companyNameUrl="ngModel"
             [(ngModel)]="jobService.listedJob.companyNameUrl"
@@ -33,6 +23,18 @@
             required
           />
         </td>
+
+        <td>
+          <input
+            type="text"
+            #companyName="ngModel"
+            [(ngModel)]="jobService.listedJob.companyName"
+            name="companyName"
+            placeholder="company name"
+            required
+          />
+        </td>
+
         <td>
           <input
             type="url"
@@ -43,6 +45,7 @@
             required
           />
         </td>
+
         <td>
           <input
             type="text"
@@ -53,6 +56,7 @@
             required
           />
         </td>
+
         <td>
           <input
             type="text"
@@ -63,6 +67,7 @@
             required
           />
         </td>
+
         <td>
           <input
             type="url"
@@ -73,6 +78,7 @@
             required
           />
         </td>
+
         <td>
           <input
             type="email"
@@ -83,6 +89,7 @@
             required
           />
         </td>
+
         <td><input type="submit" value="Create" /></td>
       </tr>
     </table>

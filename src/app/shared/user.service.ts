@@ -1,19 +1,19 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
-import { environment } from '../../environments/environment';
-import { User } from './user.model';
+import { environment } from "../../environments/environment";
+import { User } from "./user.model";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root"
 })
 export class UserService {
   selectedUser: User = {
-    username: '',
-    password: '',
+    username: "",
+    password: ""
   };
 
-  noAuthHeader = { headers: new HttpHeaders({ NoAuth: 'True' }) };
+  noAuthHeader = { headers: new HttpHeaders({ NoAuth: "True" }) };
 
   constructor(private http: HttpClient) {}
 
@@ -21,7 +21,7 @@ export class UserService {
 
   postUser(user: User) {
     return this.http.post(
-      `${environment.apiBaseUrl}/register`,
+      `${environment.apiBaseUrl}/signup`,
       user,
       this.noAuthHeader
     );
@@ -42,21 +42,21 @@ export class UserService {
   //Helper methods
 
   getToken() {
-    return localStorage.getItem('token');
+    return localStorage.getItem("token");
   }
 
   setToken(token: string) {
-    localStorage.setItem('token', token);
+    localStorage.setItem("token", token);
   }
 
   deleteToken() {
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
   }
 
   getUserPayload() {
-    var token = localStorage.getItem('token');
+    var token = localStorage.getItem("token");
     if (token) {
-      var userPayload = atob(token.split('.')[1]);
+      var userPayload = atob(token.split(".")[1]);
       return JSON.parse(userPayload);
     } else {
       return null;

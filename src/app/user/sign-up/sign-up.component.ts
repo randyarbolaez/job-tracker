@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class SignUpComponent implements OnInit {
   serverErrorMessage: string;
 
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(public userService: UserService, private router: Router) {}
 
   ngOnInit() {}
 

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:3000/api',
+  apiBaseUrl: "https://job-tracker-api-0.herokuapp.com/api"
 };
 
 /*

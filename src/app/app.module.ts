@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { FileSelectDirective } from 'ng2-file-upload';
+// import { FileSelectDirective } from 'ng2-file-upload';
 //components
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
@@ -25,6 +25,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
 
 import { NgxPaginationModule } from 'ngx-pagination';
+import { JobService } from './shared/job.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SignUpComponent,
     UserProfileComponent,
     SignInComponent,
-    FileSelectDirective,
+    // FileSelectDirective,
     NavBarComponent,
     HomeComponent,
     PageNotFoundComponent,
@@ -50,6 +51,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
     UserService,
+    JobService,
     AuthGuard,
   ],
   bootstrap: [AppComponent],

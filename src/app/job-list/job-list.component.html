@@ -1,3 +1,5 @@
+<!-- <div *ngIf="{jobs}">Content to render when condition is true.</div> -->
+
 <table>
   <tr>
     <th>Company Name</th>
@@ -9,8 +11,8 @@
   </tr>
   <tr
     *ngFor="
-      let job of (jobService.jobs
-        | paginate: { itemsPerPage: 10, currentPage: p })
+      let job of jobService.jobs
+        | paginate: { itemsPerPage: 10, currentPage: p }
     "
   >
     <td>

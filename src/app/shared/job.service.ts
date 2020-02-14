@@ -1,23 +1,23 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
-import { Job } from './job.model';
+import { Job } from "./job.model";
 
-import { environment } from '../../environments/environment';
+import { environment } from "../../environments/environment";
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root"
 })
 export class JobService {
   listedJob: Job = {
-    jobListingUrl: '',
-    companyName: '',
-    companyNameUrl: '',
-    jobPosting: '',
-    notes: '',
-    location: '',
-    personOfContact: '',
-    personOfContactUrl: '',
-    mailToLink: '',
+    jobListingUrl: "",
+    companyName: "",
+    companyNameUrl: "",
+    jobPosting: "",
+    notes: "",
+    location: "",
+    personOfContact: "",
+    personOfContactUrl: "",
+    mailToLink: ""
   };
 
   jobs: Job[];
