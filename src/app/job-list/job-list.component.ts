@@ -14,10 +14,10 @@ export class JobListComponent implements OnInit {
   constructor(public jobService: JobService, private router: Router) {}
 
   ngOnInit() {
-    this.myJobs();
+    this.allJobs();
   }
 
-  myJobs() {
+  allJobs() {
     this.jobService.getJobList().subscribe(res => {
       this.jobService.jobs = res as Job[];
     });
@@ -25,7 +25,7 @@ export class JobListComponent implements OnInit {
 
   deleteJob(id) {
     this.jobService.remove(id).subscribe(res => {
-      this.myJobs();
+      this.allJobs();
     });
   }
 }

@@ -21,7 +21,7 @@ export class UserService {
 
   postUser(user: User) {
     return this.http.post(
-      `https://job-tracker-api-0.herokuapp.com/api/signup`,
+      `${environment.apiBaseUrl}/signup`,
       user,
       this.noAuthHeader
     );
@@ -29,16 +29,14 @@ export class UserService {
 
   login(authCredentials) {
     return this.http.post(
-      `https://job-tracker-api-0.herokuapp.com/api/authenticate`,
+      `${environment.apiBaseUrl}/authenticate`,
       authCredentials,
       this.noAuthHeader
     );
   }
 
   getUserProfile() {
-    return this.http.get(
-      `https://job-tracker-api-0.herokuapp.com/api/userprofile`
-    );
+    return this.http.get(`${environment.apiBaseUrl}/userprofile`);
   }
 
   //Helper methods
