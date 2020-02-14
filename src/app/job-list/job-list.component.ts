@@ -18,8 +18,8 @@ export class JobListComponent implements OnInit {
   }
 
   myJobs() {
-    this.jobService.getJobList().subscribe(({ allJobs }) => {
-      this.jobService.jobs = allJobs as Job[];
+    this.jobService.getJobList().subscribe(res => {
+      this.jobService.jobs = res as Job[];
     });
   }
 
